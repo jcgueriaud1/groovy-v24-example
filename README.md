@@ -1,6 +1,6 @@
 # Vaadin Gradle Skeleton Starter
 
-This project demos the possibility of having Vaadin project in npm+webpack mode using Gradle.
+This project demos the possibility of having Vaadin project using Gradle, Groovy and Java at the same time.
 Please see the [Starting a Vaadin project using Gradle](https://vaadin.com/docs/latest/guide/start/gradle) for the documentation.
 
 Prerequisites:

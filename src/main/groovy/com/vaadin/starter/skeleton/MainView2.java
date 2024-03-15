@@ -8,19 +8,15 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
 
-/**
- * The main view contains a button and a click listener.
- */
-@Route("")
-public class MainView extends VerticalLayout {
-
-    public MainView() {
+@Route(value = "java")
+public class MainView2 extends VerticalLayout {
+    public MainView2() {
         // Use TextField for standard text input
         TextField textField = new TextField("Your name");
 
         // Button click listeners can be defined as lambda expressions
-        Button button = new Button("Say hello", e -> {
-            add(new Paragraph(new GreetService().greet(textField.getValue())));
+        Button button = new Button("Say hello in Java", e -> {
+            add(new Paragraph(GreetService.greet(textField.getValue())));
         });
 
         // Theme variants give you predefined extra styles for components.

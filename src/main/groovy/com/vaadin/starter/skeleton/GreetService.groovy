@@ -1,8 +1,11 @@
-package com.vaadin.starter.skeleton;
+package com.vaadin.starter.skeleton
 
+import groovy.transform.CompileStatic
+
+@CompileStatic
 public class GreetService {
 
-    public String greet(String name) {
+    public static String greet(String name) {
         if (name == null || name.isEmpty()) {
             return "Hello anonymous user";
         } else {

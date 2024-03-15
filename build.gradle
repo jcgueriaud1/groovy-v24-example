@@ -7,6 +7,7 @@ buildscript {
 }
 
 plugins {
+    id 'groovy'
     id 'war'
     id 'org.gretty' version '4.1.1'
     id 'com.vaadin'
@@ -33,6 +34,7 @@ vaadin {
 }
 
 dependencies {
+    implementation 'org.apache.groovy:groovy:4.0.14'
     implementation enforcedPlatform("com.vaadin:vaadin-bom:$vaadinVersion")
 
     // Vaadin
